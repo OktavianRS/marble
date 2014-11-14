@@ -1,0 +1,311 @@
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+a, .button,i,button{
+    transition: all ,color 0.2s ease-in, background-color .3s ease-in, border-color .3s ease-in,border-radius .3s ease-in;
+}
+
+
+body{
+    font-size: 14px;
+    font-family: "Roboto","Roboto Condensed","Roboto slab";
+    background: #fff;
+}
+.wraper{
+    width: 100%;
+}
+header{
+    background: url(../img/header_background.jpg)no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+nav{
+    padding: 20px;
+}
+.logo{
+    text-decoration: none;
+    color: #4e4e4e;
+    font-size: 40px;
+    font-fsamily: "Roboto Condensed";
+    font-weight: bold;
+}
+nav ul{
+    padding: 12px 0;
+    display: block;
+    float: right;
+}
+nav  li{
+    float: left;
+}
+nav li > a:hover{
+    color: #1abb9c;
+}
+nav li > a{
+    color: #4e4e4e;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: "Roboto condensed";
+}
+nav li + li{
+    margin-left: 20px;
+}
+.slider{
+    background: url(../img/header_img.jpg)no-repeat;
+    background-size: cover;
+    padding: 200px;
+}
+.slider > div > h2{
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Roboto slab";
+    font-weight: bold;
+
+}
+.slider > div > h3{
+    margin: 45px auto;
+    color: #a8a8a8;
+    font-size: 32px;
+     font-family: "Roboto slab";
+    font-weight: bold;
+     text-align: center;
+}
+.slider > div > button{
+    border: none;
+    display: block;
+    margin: auto;
+    background-color: #3f8dbf;
+    border-bottom: 3px solid #3678a3;
+     border-radius: 3px;
+}
+.slider > div > button:hover{
+    background-color: #3c779d;
+}
+.slider > div > button > a{
+      padding: 18px;
+    text-transform: uppercase;
+    flex-flow: "Roboto condensed";
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+}
+.service > .container{
+    padding: 60px;
+    border-bottom: 2px solid #dcdcdc;
+}
+.service > .container > .block > a{
+    margin: auto;
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+}
+.img_light{
+     padding: 30px;
+    background-color: #9d9abf;
+}
+.img_clock{
+     padding: 30px;
+    background-color: #d2514b;
+}
+.img_colb{
+    padding: 27px;
+    background-color: #66a3c6;
+}
+.img_ferm{
+    padding-left: 26px;
+    padding-top: 37px;
+    background-color: #e8c04f;
+}
+.service > .container > .block > h4{
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Roboto slab";
+    font-size: 18px;
+    color: #4e4e4e;
+    font-weight: bold;
+}
+.service > .container > .block > p{
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #616161;
+}
+.latest_works{
+    padding: 60px 0;
+
+}
+.latest_works>.container>h3{
+    font-family: "Roboto Condensed";
+    font-size: 18px;
+      color: #4e4e4e;
+    font-weight: bold;
+}
+.latest_works > .container > div > .block > img{
+    margin-top: 25px;
+    height: 100%;
+    width: 100%;
+}
+.latest_works > .container > div > .block > h4{
+    font-size: 18px;
+    font-family: "Roboto slab";
+    font-weight: bold;
+    color: #4e4e4e;
+    margin-top: 25px;
+}
+.latest_works > .container > div > .block > h5{
+    margin-top: 15px;
+    font-family: "Roboto slab";
+    font-size: 13px;
+    color: #a8a8a8;
+}
+.latest_works > .container > div > .block > p{
+    margin-top: 30px;
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #5c5c5c;
+}
+.testimonial{
+    display: block;
+    padding: 50px;
+    background: #efefef;
+}
+.min_container{
+    width: 45%;
+    margin: auto;
+}
+.testimonial > div >img{
+    display: block;
+    margin: auto;
+    width: 39px;
+    height: 30px;
+}
+.testimonial > div >p{
+    margin-top: 35px;
+    font-family: "Roboto slab";
+    font-size: 20px;
+    color: #a1a1a1;
+    text-align: center;
+}
+footer{
+    padding: 50px;
+    background:url("../img/Footer.jpg")no-repeat;
+    background-size: cover;
+}
+footer > .container > .ba-grid{
+    border-bottom: 2px solid #6c6c6c;
+    padding-bottom: 50px;
+}
+footer > .container > .ba-grid > div > h3{
+    font-family: "Roboto condensed";
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: bold;
+}
+footer > .container > .ba-grid > div > p{
+    margin-top: 25px;
+    color: #cacaca;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 24px;
+
+}
+footer > .container > .ba-grid > .ba-grid-nopad > ul{
+    margin-top: 35px;
+
+}
+footer > .container > .ba-grid > .ba-grid-nopad > ul > li{
+    font-family: Roboto;
+    font-size: 14px;
+      color: #cacaca;
+    line-height: 24px;
+
+}
+footer > .container > .ba-grid > .ba-grid-nopad > ul > li:nth-child(1) a{
+    margin-right: 2px;
+    display: inline-block;
+    width: 15px;
+    height: 14px;
+    background: url("../img/sprite.png")no-repeat 0 0;
+    background-size: cover;
+}
+footer > .container > .ba-grid > .ba-grid-nopad > ul > li:nth-child(2) a{
+    margin-right: 2px;
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+        background: url("../img/sprite.png")no-repeat 0 -17px;
+    background-size: cover;
+}
+footer > .container > .ba-grid > .ba-grid-nopad > ul > li:nth-child(3) a{
+    margin-right: 2px;
+    display: inline-block;
+    width: 15px;
+    height: 9px;
+        background: url("../img/sprite.png")no-repeat 0 -34px;
+    background-size: cover;
+}
+footer > .container > .ba-grid > .block_twitter > ul > li{
+    width: 95%;
+    float: right;
+    margin-top: 25px;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #cacaca;
+}
+footer > .container > .ba-grid > .block_twitter > ul > li:before{
+    position: relative;
+    display: block;
+     width: 15px;
+    height: 46px;
+    content: " ";
+    float: left;
+     background: url("../img/sprite.png")no-repeat 0 -48px;
+}
+footer > .container > .ba-grid > .popular_posts > ul > li{
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 22px;
+    color: #cacaca;
+    margin-top: 22px;
+}
+footer > .container > .ba-grid > .about_us > ul > li{
+font-family: Roboto;
+    font-size: 14px;
+    line-height: 22px;
+    color: #cacaca;
+    margin-top: 22px;
+}
+.sign > p {
+    margin-left: -20px;
+    margin-top: 50px;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #cacaca;
+}
+.sign > p > a{
+    text-decoration: none;
+    color: #cacaca;
+}
